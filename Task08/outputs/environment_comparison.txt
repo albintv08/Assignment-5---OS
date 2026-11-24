@@ -1,0 +1,37 @@
+===== DEPLOYMENT ENVIRONMENT EVIDENCE =====
+Tue Nov 24 14:35:50 UTC 2026
+
+===== OPERATING SYSTEM =====
+PRETTY_NAME="Ubuntu 26.04.1 LTS"
+VERSION="26.04.1 LTS (Resolute Raccoon)"
+
+===== KERNEL =====
+Linux Alby-Artilugio 6.18.58.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Tue Oct 27 00:24:11 UTC 2026 x86_64 GNU/Linux
+
+===== VIRTUALIZATION DETECTION =====
+wsl
+
+===== CPU =====
+Architecture:                            x86_64
+Model name:                              Intel(R) Core(TM) Ultra 5 135H
+Hypervisor vendor:                       Microsoft
+
+===== MEMORY =====
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       562Mi       6.5Gi       4.1Mi       567Mi       7.0Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+===== STORAGE =====
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G  2.2G  954G   1% /
+
+===== CONTAINER RUNTIME =====
+Docker: not installed
+Podman: not installed
+
+===== VM MANAGEMENT TOOLS =====
+virsh: not installed
+VBoxManage: not installed
+qemu-system-x86_64: not installed
+
+===== EVIDENCE COLLECTION COMPLETE =====
