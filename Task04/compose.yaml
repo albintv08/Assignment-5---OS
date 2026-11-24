@@ -1,0 +1,22 @@
+services:
+  web:
+    build: .
+    image: university-result-portal-web:1.0
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /var/cache/nginx
+      - /var/run
+    networks:
+      - portal-net
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 256M
+
+networks:
+  portal-net:
+    driver: bridge
