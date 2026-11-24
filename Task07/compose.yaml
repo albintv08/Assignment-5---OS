@@ -1,0 +1,14 @@
+services:
+  result-portal:
+    build: .
+    container_name: result-portal
+    ports:
+      - "8081:8080"
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+    mem_limit: 128m
+    cpus: 0.5
+    security_opt:
+      - no-new-privileges:true
