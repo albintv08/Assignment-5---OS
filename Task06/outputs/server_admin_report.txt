@@ -1,0 +1,91 @@
+===== LINUX SERVER ADMINISTRATION REPORT =====
+Tue Nov 24 14:33:33 UTC 2026
+
+===== HOST AND OS =====
+ Static hostname: Alby-Artilugio
+       Icon name: computer-container
+         Chassis: container ☐
+      Machine ID: dc2a0c3bcbff4d0e9762f5788beda507
+         Boot ID: c095297cdb62403084dea8c84adcbfe9
+  Virtualization: wsl
+Operating System: Ubuntu 26.04.1 LTS
+          Kernel: Linux 6.18.58.1-microsoft-standard-WSL2
+    Architecture: x86-64
+
+===== USER AND GROUP =====
+uid=1000(alby_kutta) gid=1000(alby_kutta) groups=1000(alby_kutta),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users)
+sudo:x:27:alby_kutta
+
+===== SYSTEMD SERVICE STATUS =====
+running
+  UNIT LOAD ACTIVE SUB DESCRIPTION
+
+0 loaded units listed.
+
+===== CRON SERVICE =====
+● cron.service - Regular background program processing daemon
+     Loaded: loaded (/usr/lib/systemd/system/cron.service; enabled; preset: enabled)
+     Active: active (running) since Tue 2026-11-24 14:27:34 UTC; 5min ago
+ Invocation: 290c56370ed341fbb697b4fbe5defd23
+       Docs: man:cron(8)
+   Main PID: 107 (cron)
+      Tasks: 1 (limit: 9212)
+     Memory: 716K (peak: 1.7M)
+        CPU: 6ms
+     CGroup: /system.slice/cron.service
+             └─107 /usr/sbin/cron -f -P
+
+
+===== PROCESS MONITORING =====
+    PID COMMAND         %CPU %MEM
+   1165 pro             88.4  1.2
+    245 unattended-upgr  0.0  0.4
+    117 networkd-dispat  0.0  0.3
+     44 systemd-journal  0.0  0.3
+      1 systemd          0.1  0.1
+    164 wsl-pro-service  0.0  0.1
+     79 systemd-resolve  0.0  0.1
+    382 systemd          0.0  0.1
+     86 systemd-udevd    0.0  0.1
+   1152 ubuntu-insights  3.9  0.1
+    140 systemd-logind   0.0  0.1
+
+===== MEMORY MONITORING =====
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       635Mi       6.5Gi       4.2Mi       496Mi       6.9Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+===== STORAGE MONITORING =====
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G  2.2G  954G   1% /
+
+===== NETWORK MONITORING =====
+Total: 208
+TCP:   3 (estab 0, closed 0, orphaned 0, timewait 0)
+
+Transport Total     IP        IPv6
+RAW	  0         0         0        
+UDP	  7         5         2        
+TCP	  3         3         0        
+INET	  10        8         2        
+FRAG	  0         0         0        
+
+
+===== SYSTEM LOG SAMPLE =====
+Nov 24 14:33:31 Alby-Artilugio systemd[382]: launchpadlib-cache-clean.service - Clean up old files in the Launchpadlib cache skipped, unmet condition check ConditionPathExists=/home/alby_kutta/.launchpadlib/api.launchpad.net/cache
+Nov 24 14:33:31 Alby-Artilugio systemd[382]: Starting ubuntu-insights-collect.service - "Collect platform report using Ubuntu Insights while respecting consent"...
+Nov 24 14:33:32 Alby-Artilugio ubuntu-insights[1152]: 2026/11/24 14:33:32 WARN failed to run wsl.exe -v error="exit status 1"
+Nov 24 14:33:33 Alby-Artilugio dbus-daemon[108]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.15' (uid=1000 pid=1201 comm="hostnamectl" label="kernel")
+Nov 24 14:33:33 Alby-Artilugio systemd[1]: Starting systemd-hostnamed.service - Hostname Service...
+Nov 24 14:33:33 Alby-Artilugio systemd[1]: Started systemd-hostnamed.service - Hostname Service.
+Nov 24 14:33:33 Alby-Artilugio dbus-daemon[108]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Nov 24 14:33:33 Alby-Artilugio dbus-daemon[108]: [system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkit.service' requested by ':1.16' (uid=0 pid=1203 comm="/usr/lib/systemd/systemd-hostnamed" label="kernel")
+Nov 24 14:33:33 Alby-Artilugio systemd[1]: Starting polkit.service - Authorization Manager...
+Nov 24 14:33:33 Alby-Artilugio polkitd[1204]: Started polkitd version 127
+Nov 24 14:33:33 Alby-Artilugio systemd[1]: Started polkit.service - Authorization Manager.
+Nov 24 14:33:33 Alby-Artilugio dbus-daemon[108]: [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+
+===== CRONTAB =====
+no crontab for alby_kutta
+
+===== ADMINISTRATION REPORT COMPLETE =====
