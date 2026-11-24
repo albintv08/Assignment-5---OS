@@ -1,0 +1,63 @@
+===== LINUX ADMINISTRATION AUDIT =====
+Tue Nov 24 14:30:33 UTC 2026
+
+===== CURRENT USER =====
+uid=1000(alby_kutta) gid=1000(alby_kutta) groups=1000(alby_kutta),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users)
+
+===== SUDO AVAILABILITY =====
+/usr/bin/sudo
+
+===== SYSTEMD STATUS =====
+running
+
+===== FAILED SERVICES =====
+  UNIT LOAD ACTIVE SUB DESCRIPTION
+
+0 loaded units listed.
+
+===== ACTIVE SERVICES (SAMPLE) =====
+  UNIT                        LOAD   ACTIVE SUB     DESCRIPTION
+  chrony.service              loaded active running chrony, an NTP client/server
+  cron.service                loaded active running Regular background program processing daemon
+  dbus.service                loaded active running D-Bus System Message Bus
+  getty@tty1.service          loaded active running Getty on tty1
+  networkd-dispatcher.service loaded active running Dispatcher daemon for systemd-networkd
+  rsyslog.service             loaded active running System Logging Service
+  systemd-journald.service    loaded active running Journal Service
+  systemd-logind.service      loaded active running User Login Management
+  systemd-resolved.service    loaded active running Network Name Resolution
+  systemd-udevd.service       loaded active running Rule-based Manager for Device Events and Files
+  unattended-upgrades.service loaded active running Unattended Upgrades Shutdown
+  user@1000.service           loaded active running User Manager for UID 1000
+  wsl-pro.service             loaded active running Bridge to Ubuntu Pro agent on Windows
+
+
+===== DISK USAGE =====
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G  2.2G  954G   1% /
+
+===== MEMORY =====
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       551Mi       6.9Gi       4.1Mi       234Mi       7.0Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+===== NETWORK LISTENING SOCKETS =====
+Netid State  Recv-Q Send-Q  Local Address:Port Peer Address:Port
+udp   UNCONN 0      0          127.0.0.54:53        0.0.0.0:*   
+udp   UNCONN 0      0       127.0.0.53%lo:53        0.0.0.0:*   
+udp   UNCONN 0      0      10.255.255.254:53        0.0.0.0:*   
+udp   UNCONN 0      0           127.0.0.1:323       0.0.0.0:*   
+udp   UNCONN 0      0           127.0.0.1:323       0.0.0.0:*   
+udp   UNCONN 0      0               [::1]:323          [::]:*   
+udp   UNCONN 0      0               [::1]:323          [::]:*   
+tcp   LISTEN 0      1000   10.255.255.254:53        0.0.0.0:*   
+tcp   LISTEN 0      4096    127.0.0.53%lo:53        0.0.0.0:*   
+tcp   LISTEN 0      4096       127.0.0.54:53        0.0.0.0:*   
+
+===== SSH SERVICE CHECK =====
+inactive
+
+===== FIREWALL COMMAND CHECK =====
+UFW is not installed
+
+===== AUDIT COMPLETE =====
